@@ -1,0 +1,136 @@
+## Stufe I
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Wie kam es zum WWW?",
+    level = 1,
+    base_points = 5,
+    max_base_points = 5 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Stelle die Entstehungsgeschichte des World Wide Web in zwei bis drei Sätzen dar. Gehe darauf ein, wer es erfunden hat, wann und in welchem Umfeld die ersten technischen Komponenten bereitgestellt wurden.   
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Das WWW geht auf Tim Berners-Lee zurück\*, der 1989 am CERN\* die Idee eines vernetzten Hypertext-Systems\* entwickelte. 1990 entstanden der erste Webserver und der erste Browser\*, die Inhalte über HTTP abrufbar machten. Ab 1993 wurde die Technologie öffentlich verfügbar\* und führte zum raschen Wachstum des World Wide Web.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Internet oder WWW?",
+    level = 1,
+    base_points = 4,
+    max_base_points = 4 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Erkläre in wenigen präzisen Sätzen den Unterschied zwischen Internet und World Wide Web.   
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Das Internet ist die technische Netz-Infrastruktur aus verbundenen Rechnern und Leitungen\*\*, das WWW ist die Gesamtheit der über das Internet zugänglichen Informationen und Dienste\*\*, die typischerweise via HTTP oder HTTPS bereitgestellt werden.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Web Ressourcen",
+    level = 1,
+    base_points = 3,
+    max_base_points = 10 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Nenne mindestens drei Arten von Web-Ressourcen.   
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Webseiten\* oder Dokumente\*, Audiodateien\* oder Audiostreams\*, Videodateien\* oder Videostreams\*, Bilder\*, PDFs\*, Dienste\* und APIs\*.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "HTTP und HTTPS",
+    level = 1,
+    base_points = 5,
+    max_base_points = 5 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Erkläre die Aufgaben der Protokolle HTTP und HTTPS und nenne ihren wichtigsten Unterschied.   
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[HTTP realisiert das Anfrage-Antwort-Prinzip\* zwischen Client und Server\* für den Transfer von Webinhalten\*. HTTPS erweitert dies um Transportverschlüsselung (TLS)\*, sodass Inhalte und Metadaten besser vor Mitlesen geschützt sind\*.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Client–Server",
+    level = 1,
+    base_points = 6,
+    max_base_points = 6 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Beschreibe das Client–Server-Modell so, wie es im Text ausgeführt ist, und verwende ein alltagsnahes Beispiel.
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Ein Browser (Client)\* stellt eine Anfrage\* an einen Webserver\*, der die Anfrage verarbeitet\* und die Ressource (z. B. ein HTML-Dokument) liefert\*. Beide Seiten sprechen ein gemeinsames Protokoll, typischerweise HTTP oder HTTPS\*.]{fg="yellow-shade-5"}
+:::

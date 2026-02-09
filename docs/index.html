@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Călin Aurel Drăgan">
+
+<title>quarto-inputf6e4aa246c2bbce9</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="index_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="index_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-46eeb4c476de49ef7df495821a6125d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark-2e0ab3ffcb189ca14a0af92b40aeab37.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-46eeb4c476de49ef7df495821a6125d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap-3425cfae6db2005cddf489447706abcd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-dark-3425cfae6db2005cddf489447706abcd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-3425cfae6db2005cddf489447706abcd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.23/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light">
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title"><p>
+<img src="style/mgmss_symbol_color.png" class="img-fluid" width="40">
+</p>
+<p>WWW</p></h1>
+            <p class="subtitle lead">Das Netz der Information<br><small>Aufgaben</small></p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor:in</div>
+      <div class="quarto-title-meta-contents">
+               <p>Călin Aurel Drăgan </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">9. Februar 2026</p>
+      </div>
+    </div>
+    
+      <div>
+      <div class="quarto-title-meta-heading">Geändert</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">9. Februar 2026</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  <div>
+    <div class="abstract">
+      <div class="block-title">Zusammenfassung</div>
+      Der Austausch von Information war die ursprüngliche Motivation für die Erfindung des World Wide Web. Die Webseite ist die bekannteste Form eines Dokuments zum Austausch von Information. Die Aufgaben in diesem Dokument dienen Dir dazu, die technischen Grundlagen des WWW besser zu verstehen.
+    </div>
+  </div>
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#arbeitsaufträge" id="toc-arbeitsaufträge" class="nav-link active" data-scroll-target="#arbeitsaufträge">Arbeitsaufträge</a></li>
+  <li><a href="#stufe-i" id="toc-stufe-i" class="nav-link" data-scroll-target="#stufe-i"><span class="header-section-number">1</span> Stufe I</a>
+  <ul>
+  <li><a href="#wie-kam-es-zum-www" id="toc-wie-kam-es-zum-www" class="nav-link" data-scroll-target="#wie-kam-es-zum-www"><span class="header-section-number">1.1</span> Wie kam es zum WWW?</a></li>
+  <li><a href="#internet-oder-www" id="toc-internet-oder-www" class="nav-link" data-scroll-target="#internet-oder-www"><span class="header-section-number">1.2</span> Internet oder WWW?</a></li>
+  <li><a href="#web-ressourcen" id="toc-web-ressourcen" class="nav-link" data-scroll-target="#web-ressourcen"><span class="header-section-number">1.3</span> Web Ressourcen</a></li>
+  <li><a href="#http-und-https" id="toc-http-und-https" class="nav-link" data-scroll-target="#http-und-https"><span class="header-section-number">1.4</span> HTTP und HTTPS</a></li>
+  <li><a href="#clientserver" id="toc-clientserver" class="nav-link" data-scroll-target="#clientserver"><span class="header-section-number">1.5</span> Client–Server</a></li>
+  </ul></li>
+  <li><a href="#stufe-ii" id="toc-stufe-ii" class="nav-link" data-scroll-target="#stufe-ii"><span class="header-section-number">2</span> Stufe II</a>
+  <ul>
+  <li><a href="#dns" id="toc-dns" class="nav-link" data-scroll-target="#dns"><span class="header-section-number">2.1</span> DNS</a></li>
+  <li><a href="#uri" id="toc-uri" class="nav-link" data-scroll-target="#uri"><span class="header-section-number">2.2</span> URI</a></li>
+  <li><a href="#url-oder-urn" id="toc-url-oder-urn" class="nav-link" data-scroll-target="#url-oder-urn"><span class="header-section-number">2.3</span> URL oder URN?</a></li>
+  <li><a href="#protokollzwiebel" id="toc-protokollzwiebel" class="nav-link" data-scroll-target="#protokollzwiebel"><span class="header-section-number">2.4</span> Protokollzwiebel</a></li>
+  <li><a href="#suchmaschinen-crawling-und-indexierung" id="toc-suchmaschinen-crawling-und-indexierung" class="nav-link" data-scroll-target="#suchmaschinen-crawling-und-indexierung"><span class="header-section-number">2.5</span> Suchmaschinen: Crawling und Indexierung</a></li>
+  <li><a href="#warum-gibt-es-ein-deep-web" id="toc-warum-gibt-es-ein-deep-web" class="nav-link" data-scroll-target="#warum-gibt-es-ein-deep-web"><span class="header-section-number">2.6</span> Warum gibt es ein Deep Web?</a></li>
+  </ul></li>
+  <li><a href="#stufe-iii" id="toc-stufe-iii" class="nav-link" data-scroll-target="#stufe-iii"><span class="header-section-number">3</span> Stufe III</a>
+  <ul>
+  <li><a href="#dark-web-oder-deep-web" id="toc-dark-web-oder-deep-web" class="nav-link" data-scroll-target="#dark-web-oder-deep-web"><span class="header-section-number">3.1</span> Dark Web oder Deep Web?</a></li>
+  <li><a href="#anonymität-im-dark-web" id="toc-anonymität-im-dark-web" class="nav-link" data-scroll-target="#anonymität-im-dark-web"><span class="header-section-number">3.2</span> Anonymität im Dark Web</a></li>
+  <li><a href="#personalisierte-suche" id="toc-personalisierte-suche" class="nav-link" data-scroll-target="#personalisierte-suche"><span class="header-section-number">3.3</span> Personalisierte Suche</a></li>
+  <li><a href="#uri-dekodierung" id="toc-uri-dekodierung" class="nav-link" data-scroll-target="#uri-dekodierung"><span class="header-section-number">3.4</span> URI Dekodierung</a></li>
+  </ul></li>
+  <li><a href="#punkte" id="toc-punkte" class="nav-link" data-scroll-target="#punkte">Punkte</a>
+  <ul>
+  <li><a href="#gesamtpunkte-pro-stufe" id="toc-gesamtpunkte-pro-stufe" class="nav-link" data-scroll-target="#gesamtpunkte-pro-stufe">Gesamtpunkte pro Stufe</a></li>
+  <li><a href="#punkte-pro-aufgabe" id="toc-punkte-pro-aufgabe" class="nav-link" data-scroll-target="#punkte-pro-aufgabe">Punkte pro Aufgabe</a></li>
+  <li><a href="#benotung-nach-punkten" id="toc-benotung-nach-punkten" class="nav-link" data-scroll-target="#benotung-nach-punkten">Benotung nach Punkten</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- Initialize Fontawesome with any icon {{< fa thumbs-up >}} -->
+<div class="hidden">
+<!-- Groundwork -->
+<p><span class="math display">
+\gdef\sub#1{_{\mathrm{#1}}}
+\gdef\unit#1{\mathrm{#1}}
+</span> <!-- Physical units --> <span class="math display">
+\gdef\celsius{\unit{°C}}
+\gdef\joule{\unit{J}}
+\gdef\kelvin{\unit{K}}
+\gdef\kilogram{\unit{kg}}
+\gdef\liter{\unit{L}}
+\gdef\milliliter{\unit{mL}}
+\gdef\meter{\unit{m}}
+\gdef\mole{\unit{mol}}
+\gdef\newton{\unit{N}}
+\gdef\pascal{\unit{Pa}}
+</span> <!-- Exponentiated units --> <span class="math display">
+\gdef\squaremeter{\meter^2}
+\gdef\cubicmeter{\meter^3}
+</span> <!-- Combined physical units --> <span class="math display">
+\gdef\newtonperkilogram{\frac{\newton}{\kilogram}}
+\gdef\joulepermole{\frac{\joule}{\mole}}
+\gdef\jouleperkilogram{\frac{\joule}{\kilogram}}
+\gdef\jouleperkelvin{\frac{\joule}{\kelvin}}
+\gdef\jouleperkilogramperkelvin{\frac{\joule}{\kilogram\,\kelvin}}
+\gdef\joulepermoleperkelvin{\frac{\joule}{\mole\,\kelvin}}
+</span></p>
+</div>
+<div class="hidden">
+
+</div>
+<div class="hidden">
+
+</div>
+<section id="arbeitsaufträge" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="arbeitsaufträge">Arbeitsaufträge</h2>
+<p>Bevor Du loslegst, rufe Dir die <a href="https://mgmssa.github.io/cs_expectations_and_requirements/">Anforderungen</a> für Informatikaufgaben in Stufe 9 ins Gedächtnis. Reiche die Antworten als digitales Dokument ein und verwende eine leserliche Schrift, falls Du ein handgeschriebenes Dokument einreichst. Stufe I ist auf E Niveau, Stufe II ist auf E/A Niveau, Stufe III ist komplett auf A Niveau angesiedelt.</p>
+<p>Die Grundpunktanzahl eines Arbeitsauftrages wird durch die Summe der Grundpunkte aller Aufgaben berechnet. Die Grundpunkte kannst Du nicht einsehen, weil sie für Dich bei der Wahl der Aufgaben keine Rolle spielen. Die Grundpunkte sind aber wichtig, weil die Benotungsstufen von ihnen abhängt.</p>
+<p>Keine Panik! Die Grundpunkte werden mit den Multiplikatoren <strong>1</strong> für Stufe I, <strong>2</strong> für Stufe II, und <strong>3</strong> für Stufe III, multipliziert. Du bekommst <em>diese</em> Punkte und nicht die Grundpunkte. Du vergleichst <em>diese</em> Punkte mit der Tabelle, um Deine Note einzuschätzen. Das heisst, weil Deine Punkte durch die Multiplikatoren gegangen sind, kannst Du mehr Punkte einfahren, als zum Erreichen einer Notenstufe “Sehr gut” notwendig ist.</p>
+</section>
+<section id="stufe-i" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="stufe-i"><span class="header-section-number">1</span> Stufe I</h2>
+<section id="wie-kam-es-zum-www" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="wie-kam-es-zum-www"><span class="header-section-number">1.1</span> Wie kam es zum WWW?</h3>
+<p>Stelle die Entstehungsgeschichte des World Wide Web in zwei bis drei Sätzen dar. Gehe darauf ein, wer es erfunden hat, wann und in welchem Umfeld die ersten technischen Komponenten bereitgestellt wurden.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 5 und maximal 5 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="internet-oder-www" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="internet-oder-www"><span class="header-section-number">1.2</span> Internet oder WWW?</h3>
+<p>Erkläre in wenigen präzisen Sätzen den Unterschied zwischen Internet und World Wide Web.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 4 und maximal 4 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="web-ressourcen" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="web-ressourcen"><span class="header-section-number">1.3</span> Web Ressourcen</h3>
+<p>Nenne mindestens drei Arten von Web-Ressourcen.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 3 und maximal 10 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="http-und-https" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="http-und-https"><span class="header-section-number">1.4</span> HTTP und HTTPS</h3>
+<p>Erkläre die Aufgaben der Protokolle HTTP und HTTPS und nenne ihren wichtigsten Unterschied.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 5 und maximal 5 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="clientserver" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="clientserver"><span class="header-section-number">1.5</span> Client–Server</h3>
+<p>Beschreibe das Client–Server-Modell so, wie es im Text ausgeführt ist, und verwende ein alltagsnahes Beispiel.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 6 und maximal 6 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+</section>
+<section id="stufe-ii" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="stufe-ii"><span class="header-section-number">2</span> Stufe II</h2>
+<section id="dns" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="dns"><span class="header-section-number">2.1</span> DNS</h3>
+<p>Erkläre das Domain Name System gemäß der Darstellung im Text und zeige die Namenshierarchie an einem Beispiel wie <code>www.pexels.com</code>.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 6 und maximal 6 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="uri" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="uri"><span class="header-section-number">2.2</span> URI</h3>
+<p>Stelle den Aufbau einer URI dar, wie im Text beschrieben. Kennzeichne Scheme, Authority, Path, Query und Fragment an:</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 14 und maximal 14 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="url-oder-urn" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="url-oder-urn"><span class="header-section-number">2.3</span> URL oder URN?</h3>
+<p>Erkläre den Unterschied zwischen URL und URN anhand der Definitionen im Text und gib jeweils ein Beispiel.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 12 und maximal 12 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="protokollzwiebel" class="level3" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="protokollzwiebel"><span class="header-section-number">2.4</span> Protokollzwiebel</h3>
+<p>Ordne HTTP oder HTTPS, TCP oder UDP oder QUIC, IP und ein Layer-2-Protokoll der passenden Schicht zu (Anwendung, Transport, Internet, Link). Warum gibt es diese Protokollzwiebel?</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 12 und maximal 12 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="suchmaschinen-crawling-und-indexierung" class="level3" data-number="2.5">
+<h3 data-number="2.5" class="anchored" data-anchor-id="suchmaschinen-crawling-und-indexierung"><span class="header-section-number">2.5</span> Suchmaschinen: Crawling und Indexierung</h3>
+<p>Beschreibe den Ablauf von Crawling, Indexierung und Ranking und nenne Gründe, warum die Ergebnislisten je nach Suchmaschine voneinander abweichen.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 16 und maximal 16 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="warum-gibt-es-ein-deep-web" class="level3" data-number="2.6">
+<h3 data-number="2.6" class="anchored" data-anchor-id="warum-gibt-es-ein-deep-web"><span class="header-section-number">2.6</span> Warum gibt es ein Deep Web?</h3>
+<p>Nenne und erläutere Gründe für Inhalte außerhalb der Suchindizes, so wie sie im Text genannt werden.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 10 und maximal 14 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+</section>
+<section id="stufe-iii" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="stufe-iii"><span class="header-section-number">3</span> Stufe III</h2>
+<section id="dark-web-oder-deep-web" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="dark-web-oder-deep-web"><span class="header-section-number">3.1</span> Dark Web oder Deep Web?</h3>
+<p>Vergleiche Deep Web und Dark Web entlang der im Text genannten technischen Merkmale, Zugänge und Beispiele.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 21 und maximal 27 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="anonymität-im-dark-web" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="anonymität-im-dark-web"><span class="header-section-number">3.2</span> Anonymität im Dark Web</h3>
+<p>Erörtere Chancen und Gefahren der Anonymität im Dark Web sowohl technisch als auch gesellschaftlich. Was ist notwendig, damit das Dark Web sicherer wird?</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 24 und maximal 33 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="personalisierte-suche" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="personalisierte-suche"><span class="header-section-number">3.3</span> Personalisierte Suche</h3>
+<p>Beurteile Personalisierung bei Suchmaschinen unter Bezug auf die im Text erwähnten Faktoren Standort, Zeit, Verhalten und Historie, und leite Folgen für Informationsvielfalt ab.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 21 und maximal 21 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="uri-dekodierung" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="uri-dekodierung"><span class="header-section-number">3.4</span> URI Dekodierung</h3>
+<p>Zerlege die folgende URI in alle Bestandteile und erläutere Besonderheiten im Sinne des Textes:</p>
+<p>Gehe auf Benutzerinfo, Prozentkodierung, IPv6-Host, Port, Pfad mit Leerzeichen, Query-Parameter und Fragment ein.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 18 und maximal 18 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+</section>
+<section id="punkte" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="punkte">Punkte</h2>
+<p>Die mögliche Gesamtpunktanzahl ohne Stufenmultiplikatoren ist 86. Für die Benotung ist nur diese entscheidend.</p>
+<section id="gesamtpunkte-pro-stufe" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="gesamtpunkte-pro-stufe">Gesamtpunkte pro Stufe</h3>
+<p>Mit Multiplikatoren ergeben sich für die unterschiedlichen Anforderungsstufen folgende maximale Punktanzahlen:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="baevbcdcuy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#baevbcdcuy table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#baevbcdcuy thead, #baevbcdcuy tbody, #baevbcdcuy tfoot, #baevbcdcuy tr, #baevbcdcuy td, #baevbcdcuy th {
+  border-style: none;
+}
+
+#baevbcdcuy p {
+  margin: 0;
+  padding: 0;
+}
+
+#baevbcdcuy .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #181817;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F4F4E7;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#baevbcdcuy .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#baevbcdcuy .gt_title {
+  color: #181817;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #F4F4E7;
+  border-bottom-width: 0;
+}
+
+#baevbcdcuy .gt_subtitle {
+  color: #181817;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #F4F4E7;
+  border-top-width: 0;
+}
+
+#baevbcdcuy .gt_heading {
+  background-color: #F4F4E7;
+  text-align: center;
+  border-bottom-color: #F4F4E7;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#baevbcdcuy .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#baevbcdcuy .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#baevbcdcuy .gt_col_heading {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#baevbcdcuy .gt_column_spanner_outer {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#baevbcdcuy .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#baevbcdcuy .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#baevbcdcuy .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#baevbcdcuy .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#baevbcdcuy .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#baevbcdcuy .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#baevbcdcuy .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#baevbcdcuy .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#baevbcdcuy .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#baevbcdcuy .gt_stub {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#baevbcdcuy .gt_stub_row_group {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#baevbcdcuy .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#baevbcdcuy .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#baevbcdcuy .gt_summary_row {
+  color: #181817;
+  background-color: #F4F4E7;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#baevbcdcuy .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#baevbcdcuy .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#baevbcdcuy .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#baevbcdcuy .gt_grand_summary_row {
+  color: #181817;
+  background-color: #F4F4E7;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#baevbcdcuy .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#baevbcdcuy .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#baevbcdcuy .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#baevbcdcuy .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#baevbcdcuy .gt_footnotes {
+  color: #181817;
+  background-color: #F4F4E7;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#baevbcdcuy .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#baevbcdcuy .gt_sourcenotes {
+  color: #181817;
+  background-color: #F4F4E7;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#baevbcdcuy .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#baevbcdcuy .gt_left {
+  text-align: left;
+}
+
+#baevbcdcuy .gt_center {
+  text-align: center;
+}
+
+#baevbcdcuy .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#baevbcdcuy .gt_font_normal {
+  font-weight: normal;
+}
+
+#baevbcdcuy .gt_font_bold {
+  font-weight: bold;
+}
+
+#baevbcdcuy .gt_font_italic {
+  font-style: italic;
+}
+
+#baevbcdcuy .gt_super {
+  font-size: 65%;
+}
+
+#baevbcdcuy .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#baevbcdcuy .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#baevbcdcuy .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#baevbcdcuy .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#baevbcdcuy .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#baevbcdcuy .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#baevbcdcuy .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#baevbcdcuy .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#baevbcdcuy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="level" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Stufe</th>
+<th id="level_points" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Gesamtpunkte</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_right" headers="level">1</td>
+<td class="gt_row gt_right" headers="level_points">23</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="level">2</td>
+<td class="gt_row gt_right" headers="level_points">70</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="level">3</td>
+<td class="gt_row gt_right" headers="level_points">84</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>Zusammen ergibt das 177. Aufgaben aus Stufe III bringen durch den Multiplikator mehr Punkte aber sind anspruchsvoller. Löst Du nur Aufgaben aus Stufe I und II, so musst Du mehr lösen aber dafür sind die Aufgaben leichter. Setze nicht immer alles auf eine Karte; mische die unterschiedlichen Stufen.</p>
+</section>
+<section id="punkte-pro-aufgabe" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="punkte-pro-aufgabe">Punkte pro Aufgabe</h3>
+<p>Die Punkte pro Aufgabe entnimmst Du der folgenden Tabelle:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="zqtxjqphhk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zqtxjqphhk table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#zqtxjqphhk thead, #zqtxjqphhk tbody, #zqtxjqphhk tfoot, #zqtxjqphhk tr, #zqtxjqphhk td, #zqtxjqphhk th {
+  border-style: none;
+}
+
+#zqtxjqphhk p {
+  margin: 0;
+  padding: 0;
+}
+
+#zqtxjqphhk .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #181817;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F4F4E7;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#zqtxjqphhk .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#zqtxjqphhk .gt_title {
+  color: #181817;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #F4F4E7;
+  border-bottom-width: 0;
+}
+
+#zqtxjqphhk .gt_subtitle {
+  color: #181817;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #F4F4E7;
+  border-top-width: 0;
+}
+
+#zqtxjqphhk .gt_heading {
+  background-color: #F4F4E7;
+  text-align: center;
+  border-bottom-color: #F4F4E7;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#zqtxjqphhk .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zqtxjqphhk .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#zqtxjqphhk .gt_col_heading {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#zqtxjqphhk .gt_column_spanner_outer {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#zqtxjqphhk .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#zqtxjqphhk .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#zqtxjqphhk .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#zqtxjqphhk .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#zqtxjqphhk .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#zqtxjqphhk .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#zqtxjqphhk .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#zqtxjqphhk .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#zqtxjqphhk .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#zqtxjqphhk .gt_stub {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zqtxjqphhk .gt_stub_row_group {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#zqtxjqphhk .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#zqtxjqphhk .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#zqtxjqphhk .gt_summary_row {
+  color: #181817;
+  background-color: #F4F4E7;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zqtxjqphhk .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#zqtxjqphhk .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#zqtxjqphhk .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zqtxjqphhk .gt_grand_summary_row {
+  color: #181817;
+  background-color: #F4F4E7;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zqtxjqphhk .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#zqtxjqphhk .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zqtxjqphhk .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#zqtxjqphhk .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#zqtxjqphhk .gt_footnotes {
+  color: #181817;
+  background-color: #F4F4E7;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#zqtxjqphhk .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zqtxjqphhk .gt_sourcenotes {
+  color: #181817;
+  background-color: #F4F4E7;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#zqtxjqphhk .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#zqtxjqphhk .gt_left {
+  text-align: left;
+}
+
+#zqtxjqphhk .gt_center {
+  text-align: center;
+}
+
+#zqtxjqphhk .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#zqtxjqphhk .gt_font_normal {
+  font-weight: normal;
+}
+
+#zqtxjqphhk .gt_font_bold {
+  font-weight: bold;
+}
+
+#zqtxjqphhk .gt_font_italic {
+  font-style: italic;
+}
+
+#zqtxjqphhk .gt_super {
+  font-size: 65%;
+}
+
+#zqtxjqphhk .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#zqtxjqphhk .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#zqtxjqphhk .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#zqtxjqphhk .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#zqtxjqphhk .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#zqtxjqphhk .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#zqtxjqphhk .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#zqtxjqphhk .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#zqtxjqphhk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="task" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Aufgabe</th>
+<th id="level_points" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Punkte</th>
+<th id="max_level_points" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Maximale Punkte</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Stufe 1" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Stufe 1</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_left" headers="Stufe 1  task">Wie kam es zum WWW?</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">5</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Stufe 1  task">Internet oder WWW?</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">4</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">4</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Stufe 1  task">Web Ressourcen</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">3</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">10</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Stufe 1  task">HTTP und HTTPS</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">5</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Stufe 1  task">Client–Server</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">6</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">6</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Stufe 2" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Stufe 2</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_left" headers="Stufe 2  task">DNS</td>
+<td class="gt_row gt_right" headers="Stufe 2  level_points">6</td>
+<td class="gt_row gt_right" headers="Stufe 2  max_level_points">6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Stufe 2  task">URI</td>
+<td class="gt_row gt_right" headers="Stufe 2  level_points">14</td>
+<td class="gt_row gt_right" headers="Stufe 2  max_level_points">14</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Stufe 2  task">URL oder URN?</td>
+<td class="gt_row gt_right" headers="Stufe 2  level_points">12</td>
+<td class="gt_row gt_right" headers="Stufe 2  max_level_points">12</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Stufe 2  task">Protokollzwiebel</td>
+<td class="gt_row gt_right" headers="Stufe 2  level_points">12</td>
+<td class="gt_row gt_right" headers="Stufe 2  max_level_points">12</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Stufe 2  task">Suchmaschinen: Crawling und Indexierung</td>
+<td class="gt_row gt_right" headers="Stufe 2  level_points">16</td>
+<td class="gt_row gt_right" headers="Stufe 2  max_level_points">16</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Stufe 2  task">Warum gibt es ein Deep Web?</td>
+<td class="gt_row gt_right" headers="Stufe 2  level_points">10</td>
+<td class="gt_row gt_right" headers="Stufe 2  max_level_points">14</td>
+</tr>
+<tr class="gt_group_heading_row even">
+<th colspan="3" id="Stufe 3" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Stufe 3</th>
+</tr>
+<tr class="gt_row_group_first odd">
+<td class="gt_row gt_left" headers="Stufe 3  task">Dark Web oder Deep Web?</td>
+<td class="gt_row gt_right" headers="Stufe 3  level_points">21</td>
+<td class="gt_row gt_right" headers="Stufe 3  max_level_points">27</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Stufe 3  task">Anonymität im Dark Web</td>
+<td class="gt_row gt_right" headers="Stufe 3  level_points">24</td>
+<td class="gt_row gt_right" headers="Stufe 3  max_level_points">33</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Stufe 3  task">Personalisierte Suche</td>
+<td class="gt_row gt_right" headers="Stufe 3  level_points">21</td>
+<td class="gt_row gt_right" headers="Stufe 3  max_level_points">21</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Stufe 3  task">URI Dekodierung</td>
+<td class="gt_row gt_right" headers="Stufe 3  level_points">18</td>
+<td class="gt_row gt_right" headers="Stufe 3  max_level_points">18</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="benotung-nach-punkten" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="benotung-nach-punkten">Benotung nach Punkten</h3>
+<p>Die genaue Verteilung der Prozent- und Punktbereiche mit den dazugehörigen Noten entnimmst Du der folgenden Tabelle.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="bbvwhhyumy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#bbvwhhyumy table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#bbvwhhyumy thead, #bbvwhhyumy tbody, #bbvwhhyumy tfoot, #bbvwhhyumy tr, #bbvwhhyumy td, #bbvwhhyumy th {
+  border-style: none;
+}
+
+#bbvwhhyumy p {
+  margin: 0;
+  padding: 0;
+}
+
+#bbvwhhyumy .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #181817;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F4F4E7;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#bbvwhhyumy .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#bbvwhhyumy .gt_title {
+  color: #181817;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #F4F4E7;
+  border-bottom-width: 0;
+}
+
+#bbvwhhyumy .gt_subtitle {
+  color: #181817;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #F4F4E7;
+  border-top-width: 0;
+}
+
+#bbvwhhyumy .gt_heading {
+  background-color: #F4F4E7;
+  text-align: center;
+  border-bottom-color: #F4F4E7;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#bbvwhhyumy .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bbvwhhyumy .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#bbvwhhyumy .gt_col_heading {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#bbvwhhyumy .gt_column_spanner_outer {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#bbvwhhyumy .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#bbvwhhyumy .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#bbvwhhyumy .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#bbvwhhyumy .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#bbvwhhyumy .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#bbvwhhyumy .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#bbvwhhyumy .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#bbvwhhyumy .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#bbvwhhyumy .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#bbvwhhyumy .gt_stub {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bbvwhhyumy .gt_stub_row_group {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#bbvwhhyumy .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#bbvwhhyumy .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#bbvwhhyumy .gt_summary_row {
+  color: #181817;
+  background-color: #F4F4E7;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bbvwhhyumy .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#bbvwhhyumy .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#bbvwhhyumy .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bbvwhhyumy .gt_grand_summary_row {
+  color: #181817;
+  background-color: #F4F4E7;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bbvwhhyumy .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#bbvwhhyumy .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bbvwhhyumy .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#bbvwhhyumy .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bbvwhhyumy .gt_footnotes {
+  color: #181817;
+  background-color: #F4F4E7;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#bbvwhhyumy .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bbvwhhyumy .gt_sourcenotes {
+  color: #181817;
+  background-color: #F4F4E7;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#bbvwhhyumy .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bbvwhhyumy .gt_left {
+  text-align: left;
+}
+
+#bbvwhhyumy .gt_center {
+  text-align: center;
+}
+
+#bbvwhhyumy .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#bbvwhhyumy .gt_font_normal {
+  font-weight: normal;
+}
+
+#bbvwhhyumy .gt_font_bold {
+  font-weight: bold;
+}
+
+#bbvwhhyumy .gt_font_italic {
+  font-style: italic;
+}
+
+#bbvwhhyumy .gt_super {
+  font-size: 65%;
+}
+
+#bbvwhhyumy .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#bbvwhhyumy .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#bbvwhhyumy .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#bbvwhhyumy .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#bbvwhhyumy .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#bbvwhhyumy .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#bbvwhhyumy .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#bbvwhhyumy .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#bbvwhhyumy div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="percent" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Prozentbereich, %</th>
+<th id="points" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Punktebereich</th>
+<th id="grade_points" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Notenpunkte</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Sehr gut" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Sehr gut</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_center" headers="Sehr gut  percent">97 bis 100</td>
+<td class="gt_row gt_center" headers="Sehr gut  points">83 bis 86</td>
+<td class="gt_row gt_right" headers="Sehr gut  grade_points">15</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="Sehr gut  percent">93 bis 96</td>
+<td class="gt_row gt_center" headers="Sehr gut  points">80 bis 83</td>
+<td class="gt_row gt_right" headers="Sehr gut  grade_points">14</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="Sehr gut  percent">90 bis 92</td>
+<td class="gt_row gt_center" headers="Sehr gut  points">77 bis 80</td>
+<td class="gt_row gt_right" headers="Sehr gut  grade_points">13</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Gut" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Gut</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_center" headers="Gut  percent">85 bis 89</td>
+<td class="gt_row gt_center" headers="Gut  points">73 bis 77</td>
+<td class="gt_row gt_right" headers="Gut  grade_points">12</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="Gut  percent">80 bis 84</td>
+<td class="gt_row gt_center" headers="Gut  points">69 bis 73</td>
+<td class="gt_row gt_right" headers="Gut  grade_points">11</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="Gut  percent">75 bis 79</td>
+<td class="gt_row gt_center" headers="Gut  points">64 bis 68</td>
+<td class="gt_row gt_right" headers="Gut  grade_points">10</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Befriedigend" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Befriedigend</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_center" headers="Befriedigend  percent">70 bis 74</td>
+<td class="gt_row gt_center" headers="Befriedigend  points">60 bis 64</td>
+<td class="gt_row gt_right" headers="Befriedigend  grade_points">9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="Befriedigend  percent">65 bis 69</td>
+<td class="gt_row gt_center" headers="Befriedigend  points">56 bis 60</td>
+<td class="gt_row gt_right" headers="Befriedigend  grade_points">8</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="Befriedigend  percent">60 bis 64</td>
+<td class="gt_row gt_center" headers="Befriedigend  points">52 bis 56</td>
+<td class="gt_row gt_right" headers="Befriedigend  grade_points">7</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Ausreichend" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Ausreichend</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_center" headers="Ausreichend  percent">55 bis 59</td>
+<td class="gt_row gt_center" headers="Ausreichend  points">47 bis 51</td>
+<td class="gt_row gt_right" headers="Ausreichend  grade_points">6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="Ausreichend  percent">50 bis 54</td>
+<td class="gt_row gt_center" headers="Ausreichend  points">43 bis 47</td>
+<td class="gt_row gt_right" headers="Ausreichend  grade_points">5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="Ausreichend  percent">45 bis 49</td>
+<td class="gt_row gt_center" headers="Ausreichend  points">39 bis 43</td>
+<td class="gt_row gt_right" headers="Ausreichend  grade_points">4</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Mangelhaft" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Mangelhaft</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_center" headers="Mangelhaft  percent">38 bis 44</td>
+<td class="gt_row gt_center" headers="Mangelhaft  points">33 bis 38</td>
+<td class="gt_row gt_right" headers="Mangelhaft  grade_points">3</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="Mangelhaft  percent">32 bis 37</td>
+<td class="gt_row gt_center" headers="Mangelhaft  points">28 bis 32</td>
+<td class="gt_row gt_right" headers="Mangelhaft  grade_points">2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="Mangelhaft  percent">25 bis 31</td>
+<td class="gt_row gt_center" headers="Mangelhaft  points">22 bis 27</td>
+<td class="gt_row gt_right" headers="Mangelhaft  grade_points">1</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Ungenügend" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Ungenügend</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_center" headers="Ungenügend  percent">0 bis 25</td>
+<td class="gt_row gt_center" headers="Ungenügend  points">0 bis 22</td>
+<td class="gt_row gt_right" headers="Ungenügend  grade_points">0</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

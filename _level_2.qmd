@@ -1,0 +1,168 @@
+## Stufe II
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "DNS",
+    level = 2,
+    base_points = 3,
+    max_base_points = 3 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Erkläre das Domain Name System gemäß der Darstellung im Text und zeige die Namenshierarchie an einem Beispiel wie `www.pexels.com`.   
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[DNS übersetzt menschenlesbare Namen in IP-Adressen\*. Die Hierarchie von rechts nach links ist: Top-Level-Domain `com`\*, darunter `pexels` als Second-Level-Domain\*, davor der Hostname oder eine Subdomain wie `www´*`.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "URI",
+    level = 2,
+    base_points = 7,
+    max_base_points = 7 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Stelle den Aufbau einer URI dar, wie im Text beschrieben. Kennzeichne Scheme, Authority, Path, Query und Fragment an:
+
+```{url}
+https://user:pass@sub.example.org:8443/videos/cats?id=17#teil2
+
+```
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Scheme ist `https`\*. Authority besteht aus optionaler Benutzerinfo `user:pass`\*, Host `sub.example.org`\* und Port `8080`\*. Path ist `/videos/cats`\*. Query ist `?id=17`\*. Fragment ist `teil2`\*.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "URL oder URN?",
+    level = 2,
+    base_points = 6,
+    max_base_points = 6 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Erkläre den Unterschied zwischen URL und URN anhand der Definitionen im Text und gib jeweils ein Beispiel.
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Eine URL ist eine URI, die eine Ressource lokalisiert\*, also angibt, wie und wo sie erreichbar ist\*, typischerweise mit Host und Pfad\*. Ein Beispiel für ein URL ist `https://example.org/info`. Eine URN ist eine URI, die eine Ressource dauerhaft benennt\*, ohne Ort oder Zugriffspfad\*, zum Beispiel DOI oder ISBN\*.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Protokollzwiebel",
+    level = 2,
+    base_points = 6,
+    max_base_points = 6 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Ordne HTTP oder HTTPS, TCP oder UDP oder QUIC, IP und ein Layer-2-Protokoll der passenden Schicht zu (Anwendung, Transport, Internet, Link). Warum gibt es diese Protokollzwiebel?
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Anwendungsebene: HTTP oder HTTPS für Webinhalte\*. Transportebene: TCP, UDP oder QUIC für den Ende-zu-Ende-Transport\*. Internetebene: IP für Adressierung und Routing\*. Linkebene: zum Beispiel Ethernet oder WLAN für die lokale Übertragung\*. Jede Schicht hat klar abgegrenzte Aufgaben\* und kapselt die Details der darunterliegenden Ebene ab\*.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Suchmaschinen: Crawling und Indexierung",
+    level = 2,
+    base_points = 8,
+    max_base_points = 8 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Beschreibe den Ablauf von Crawling, Indexierung und Ranking und nenne Gründe, warum die Ergebnislisten je nach Suchmaschine voneinander abweichen.
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Crawler folgen Hyperlinks und erfassen Inhalte\*\*; Indexierung analysiert und strukturiert Daten\*\*; Ranking ordnet nach Relevanz/Popularität\*. Unterschiede entstehen durch verschiedene Algorithmen, Datenbasen und Personalisierung (Standort, Historie)\*\*\*.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Warum gibt es ein Deep Web?",
+    level = 2,
+    base_points = 5,
+    max_base_points = 7 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Nenne und erläutere Gründe für Inhalte außerhalb der Suchindizes, so wie sie im Text genannt werden.
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[FZugriffsbeschränkungen (Logins, Paywalls, Captchas)\*\*\*, dynamische Seiten\*, fehlende Außenlinks\*, nicht-textuelle Inhalte\* und kontext- oder standortabhängige Zugänge\*.]{fg="yellow-shade-5"}
+:::

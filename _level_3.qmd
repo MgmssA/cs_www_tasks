@@ -1,0 +1,115 @@
+## Stufe III
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Dark Web oder Deep Web?",
+    level = 3,
+    base_points = 7,
+    max_base_points = 9 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Vergleiche Deep Web und Dark Web entlang der im Text genannten technischen Merkmale, Zugänge und Beispiele.
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Deep Web: nicht indexierte Bereiche\* (z. B. Logins\*, dynamische Seiten\*, fehlende Links\*). Dark Web: spezielle Netze/Protokolle\* wie Tor\*; Zugriff mit spezieller Software\*, teils legitime\*, teils illegale\* Nutzungsszenarien.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Anonymität im Dark Web",
+    level = 3,
+    base_points = 8,
+    max_base_points = 11 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Erörtere Chancen und Gefahren der Anonymität im Dark Web sowohl technisch als auch gesellschaftlich. Was ist notwendig, damit das Dark Web sicherer wird?
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Chancen sind Whistleblowing\*, Quellenschutz\*, Pressefreiheit\* und Umgehung von Zensur\*. Gefahren sind kriminelle Märkte\*, extremistische Inhalte\*, Missbrauch\* und fehlende Regulierung\*. Eine Abwägung erfordert rechtliche, technische und ethische Leitplanken sowie Medienkompetenz. Notwendig sind rechtliche Rahmen\*, technische Schutzmaßnahmen\* und reflektierte Nutzung\*.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "Personalisierte Suche",
+    level = 3,
+    base_points = 7,
+    max_base_points = 7 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Beurteile Personalisierung bei Suchmaschinen unter Bezug auf die im Text erwähnten Faktoren Standort, Zeit, Verhalten und Historie, und leite Folgen für Informationsvielfalt ab.
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Personalisierung erhöht individuelle Relevanz\*, kann aber Perspektiven verengen\*. Abweichende Ergebnisse entstehen, wenn Algorithmen Standort\*, Zeit\*, Historie\* und persönliche Daten\*, unterschiedlich gewichten\*.]{fg="yellow-shade-5"}
+:::
+
+```{r}
+#| output: false
+
+task <- tibble::tibble(
+    task = "URI Dekodierung",
+    level = 3,
+    base_points = 6,
+    max_base_points = 6 
+) |>
+    dplyr::mutate(
+        level_points = base_points * level,
+        max_level_points = max_base_points * level
+    )
+
+tasks <- tasks |> tibble::add_row(task)
+``` 
+
+### `{r} task$task`
+
+Zerlege die folgende URI in alle Bestandteile und erläutere Besonderheiten im Sinne des Textes:
+
+```{url}
+https://user:pa%3Ass@[2001:db8::1]:8443/a%20pfad?q=a%2Bb&lang=de#kap1
+```
+
+Gehe auf Benutzerinfo, Prozentkodierung, IPv6-Host, Port, Pfad mit Leerzeichen, Query-Parameter und Fragment ein.
+
+[Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Scheme: `https`\*. Benutzerinfo: `user:pa%3Ass`\* (%3A steht für Doppelpunkt). Host: IPv6-Literal `2001:db8::1`\*. Port: `8443`\*. Pfad: `/a%20pfad` (%20 entspricht Leerzeichen). Query: `q=a%2Bb`\* und `lang=de`\* (%2B entspricht Plus). Fragment: kap1.]{fg="yellow-shade-5"}
+:::

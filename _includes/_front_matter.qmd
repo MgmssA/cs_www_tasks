@@ -1,0 +1,23 @@
+---
+title: |
+    <p>![](style/mgmss_symbol_color.png){width=40px}</p>
+    WWW
+subtitle: 'Das Netz der Information<br><small>Aufgaben</small>'
+date: 2026-02-09 
+date-modified: 2026-02-09
+author: Călin Aurel Drăgan
+abstract: 'Der Austausch von Information war die ursprüngliche Motivation für die Erfindung des World Wide Web. Die Webseite ist die bekannteste Form eines Dokuments zum Austausch von Information. Die Aufgaben in diesem Dokument dienen Dir dazu, die technischen Grundlagen des WWW besser zu verstehen.'
+# bibliography: references.bib
+format: 
+    csdoc-html:
+        include-in-header: _includes/_in_header.html
+        # include-after-body: _includes/_after_body.html
+        embed-resources: false
+        self-contained-math: false
+has-fontawesome: false
+has-math: true
+has-rating: true
+show-rating: false
+filters:
+  - highlight-text
+---
