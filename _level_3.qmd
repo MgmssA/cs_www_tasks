@@ -102,8 +102,9 @@ tasks <- tasks |> tibble::add_row(task)
 
 Zerlege die folgende URI in alle Bestandteile und erläutere Besonderheiten im Sinne des Textes:
 
-```{url}
+```
 https://user:pa%3Ass@[2001:db8::1]:8443/a%20pfad?q=a%2Bb&lang=de#kap1
+
 ```
 
 Gehe auf Benutzerinfo, Prozentkodierung, IPv6-Host, Port, Pfad mit Leerzeichen, Query-Parameter und Fragment ein.
