@@ -48,7 +48,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 Stelle den Aufbau einer URI dar, wie im Text beschrieben. Kennzeichne Scheme, Authority, Path, Query und Fragment an:
 
-```{url}
+```
 https://user:pass@sub.example.org:8443/videos/cats?id=17#teil2
 
 ```
