@@ -73,7 +73,7 @@ tasks <- tasks |> tibble::add_row(task)
 
 ### `{r} task$task`
 
-Nenne mindestens drei Arten von Web-Ressourcen.   
+Nenne mindestens drei Beispiele für Web-Ressourcen.   
 
 [Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
 

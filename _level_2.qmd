@@ -46,12 +46,14 @@ tasks <- tasks |> tibble::add_row(task)
 
 ### `{r} task$task`
 
-Stelle den Aufbau einer URI dar, wie im Text beschrieben. Kennzeichne Scheme, Authority, Path, Query und Fragment an:
+Kennzeichne die einzelnen Bestandteile der folgenden URI: 
 
 ```
 https://user:pass@sub.example.org:8443/videos/cats?id=17#teil2
 
 ```
+
+Schaue Dir die Lerninhalte an und kennzeichne Scheme, Authority, Path, Query und Fragment. Die Authority sollte in Benutzerinformation, Host und Port aufgespalten werden.
 
 [Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
 
@@ -65,8 +67,8 @@ https://user:pass@sub.example.org:8443/videos/cats?id=17#teil2
 task <- tibble::tibble(
     task = "URL oder URN?",
     level = 2,
-    base_points = 6,
-    max_base_points = 6 
+    base_points = 7,
+    max_base_points = 7 
 ) |>
     dplyr::mutate(
         level_points = base_points * level,
@@ -83,7 +85,7 @@ Erkläre den Unterschied zwischen URL und URN anhand der Definitionen im Text un
 [Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
-[Eine URL ist eine URI, die eine Ressource lokalisiert\*, also angibt, wie und wo sie erreichbar ist\*, typischerweise mit Host und Pfad\*. Ein Beispiel für ein URL ist `https://example.org/info`. Eine URN ist eine URI, die eine Ressource dauerhaft benennt\*, ohne Ort oder Zugriffspfad\*, zum Beispiel DOI oder ISBN\*.]{fg="yellow-shade-5"}
+[Eine URL ist eine URI, die eine Ressource lokalisiert\*, also angibt, wie und wo sie erreichbar ist\*, typischerweise mit Host und Pfad\*. Ein Beispiel für ein URL ist `https://example.org/info`\*. Eine URN ist eine URI, die eine Ressource dauerhaft benennt\*, ohne Ort oder Zugriffspfad\*, zum Beispiel DOI oder ISBN\*.]{fg="yellow-shade-5"}
 :::
 
 ```{r}
@@ -164,5 +166,5 @@ Nenne und erläutere Gründe für Inhalte außerhalb der Suchindizes, so wie sie
 [Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
-[FZugriffsbeschränkungen (Logins, Paywalls, Captchas)\*\*\*, dynamische Seiten\*, fehlende Außenlinks\*, nicht-textuelle Inhalte\* und kontext- oder standortabhängige Zugänge\*.]{fg="yellow-shade-5"}
+[Zugriffsbeschränkungen (Logins, Paywalls, Captchas)\*\*\*, dynamische Seiten\*, fehlende Außenlinks\*, nicht-textuelle Inhalte\* und kontext- oder standortabhängige Zugänge\*.]{fg="yellow-shade-5"}
 :::

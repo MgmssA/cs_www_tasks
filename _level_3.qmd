@@ -6,8 +6,8 @@
 task <- tibble::tibble(
     task = "Dark Web oder Deep Web?",
     level = 3,
-    base_points = 7,
-    max_base_points = 9 
+    base_points = 12,
+    max_base_points = 19 
 ) |>
     dplyr::mutate(
         level_points = base_points * level,
@@ -19,12 +19,28 @@ tasks <- tasks |> tibble::add_row(task)
 
 ### `{r} task$task`
 
-Vergleiche Deep Web und Dark Web entlang der im Text genannten technischen Merkmale, Zugänge und Beispiele.
+Vergleiche Deep Web und Dark Web entlang der im Text genannten technischen Merkmale. Gib für beide Web Arten jeweils mindestens zwei Zugangsarten und mindestens drei Anwendungsbeispiele an.
 
 [Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
-[Deep Web: nicht indexierte Bereiche\* (z. B. Logins\*, dynamische Seiten\*, fehlende Links\*). Dark Web: spezielle Netze/Protokolle\* wie Tor\*; Zugriff mit spezieller Software\*, teils legitime\*, teils illegale\* Nutzungsszenarien.]{fg="yellow-shade-5"}
+
+:::{fg="yellow-shade-5"}
+
+Deep Web:
+
+- Merkmal: WWW Bereiche, die nicht indexierte Bereiche enthalten\*
+- Zugang: IP Adresse\*, URL\*, Login\*, VPN\*, gar nicht\*
+- Beispiele: Web Email\*, Online Banking\*, Cloud Speicher\*, Social-media Seiten und Profile\*, Streaming Dienste\*
+
+Dark Web:
+
+- Merkmal: spezielle Netze/Protokolle\*
+- Zugang: Tor Browser\*, spezielle Software\*
+- Beispiele: illegale Marktplätze\*, Peer-to-Peer Datenübertragung\*, Quellenschutz\*, Umgehung der Zensur\*, Verbreitung von extremistischen Meinungen\*
+
+:::
+
 :::
 
 ```{r}
@@ -33,8 +49,8 @@ Vergleiche Deep Web und Dark Web entlang der im Text genannten technischen Merkm
 task <- tibble::tibble(
     task = "Anonymität im Dark Web",
     level = 3,
-    base_points = 8,
-    max_base_points = 11 
+    base_points = 9,
+    max_base_points = 15 
 ) |>
     dplyr::mutate(
         level_points = base_points * level,
@@ -46,12 +62,40 @@ tasks <- tasks |> tibble::add_row(task)
 
 ### `{r} task$task`
 
-Erörtere Chancen und Gefahren der Anonymität im Dark Web sowohl technisch als auch gesellschaftlich. Was ist notwendig, damit das Dark Web sicherer wird?
+Nenne mindestens drei Chancen und drei Gefahren, die durch die Anonymität im Dark Web entstehen. Diese können sowohl technischer als auch gesellschaftlicher Natur sein. Anschliessend nenne mindestens drei Massnahmen, durch die das Dark Web sicherer wird?
 
 [Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
-[Chancen sind Whistleblowing\*, Quellenschutz\*, Pressefreiheit\* und Umgehung von Zensur\*. Gefahren sind kriminelle Märkte\*, extremistische Inhalte\*, Missbrauch\* und fehlende Regulierung\*. Eine Abwägung erfordert rechtliche, technische und ethische Leitplanken sowie Medienkompetenz. Notwendig sind rechtliche Rahmen\*, technische Schutzmaßnahmen\* und reflektierte Nutzung\*.]{fg="yellow-shade-5"}
+
+::: {fg="yellow-shade-5"}
+
+Chancen sind 
+
+- Whistleblowing\*
+- Quellenschutz\*
+- Pressefreiheit\*
+- Umgehung von Zensur\*
+- Schutz von privaten Daten\*
+
+Gefahren sind 
+
+- kriminelle Märkte\*
+- extremistische Inhalte\*
+- Terrorismus\*
+- Missbrauch\*
+- Kinderpornographie\*
+
+Gefahrenminderung durch
+
+- angepasste rechtliche Rahmenbedingungen\*
+- Offenlegung von Kommunikationsprotokollen\*
+- gesteigerte Überwachung\*
+- Schutz der Rechner oder der Netzwerke\*
+- Aufklärung\*
+
+:::
+
 :::
 
 ```{r}
@@ -73,12 +117,12 @@ tasks <- tasks |> tibble::add_row(task)
 
 ### `{r} task$task`
 
-Beurteile Personalisierung bei Suchmaschinen unter Bezug auf die im Text erwähnten Faktoren Standort, Zeit, Verhalten und Historie, und leite Folgen für Informationsvielfalt ab.
+Nenne die in den Lerninhalten erwähnten Faktoren, die bei der Personalisierung von Suchergebnissen eine Rolle spielen. Stelle zwei Argumente für und wider die Personalisierung von Suchergebnissen und erwähne, welche Auswirkungen dies für die Informationsvielfalt hat.
 
 [Du kannst `{r} task$level_points` und maximal `{r} task$max_level_points` Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
-[Personalisierung erhöht individuelle Relevanz\*, kann aber Perspektiven verengen\*. Abweichende Ergebnisse entstehen, wenn Algorithmen Standort\*, Zeit\*, Historie\* und persönliche Daten\*, unterschiedlich gewichten\*.]{fg="yellow-shade-5"}
+[Abweichende Ergebnisse entstehen, wenn Algorithmen Standort\*, Zeit\*, Historie\* und persönliche Daten\*, unterschiedlich gewichten\*. Personalisierung erhöht individuelle Relevanz\*, kann aber Perspektiven verengen\*.]{fg="yellow-shade-5"}
 :::
 
 ```{r}
